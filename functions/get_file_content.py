@@ -8,8 +8,6 @@ def get_file_content(working_directory, file_path):
 
   abs_working = os.path.abspath(working_directory)
   abs_file_path = os.path.abspath(full_path)
-  print(abs_working)
-  print(abs_file_path)
 
   if not abs_file_path.startswith(abs_working):
     return f'Error: Cannot read "{file_path}" as it is outside the permitted working directory'
